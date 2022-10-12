@@ -7,7 +7,10 @@
 - [x] Criar modal para cadastrar pessoa
 - [x] Abrir e fechar modal com botão
 - [x] Criar classe e declarar variáveis para função de cadastro
-- [ ] Antes de cadastrar, Verificar os dados (se o email ainda não foi cadastrado, nome com mais de 3 caracteres e data preenchida)
+- [ ] Antes de cadastrar, Validar os dados
+    - [x] Nome com mais de 3 caracteres
+    - [ ] Se o email ainda não foi cadastrado
+    - [ ] Data válida
 - [ ] Criar função de cadastrar pessoa
 - [ ] Adicioná-la no localStorage
 - [ ] Adicioná-la na lista ao cadastrar
@@ -20,7 +23,10 @@
 - [ ] Criar modal para editar pessoa
 - [ ] Função para abrir e fechar modal com botão
 - [ ] Criar função para editar dados de uma pessoa
-- [ ] Verificar se o email alterado ainda não foi cadastrado, nome ainda possui 3 caracteres ou mais e data estar preenchida
+- [ ] Validar os dados antes de salvar as alterações
+    - [ ] Nome com mais de 3 caracteres
+    - [ ] Se o email alterado ainda não foi cadastrado
+    - [ ] Data válida
 - [ ] Salvar no localStorage
 - [ ] Atualizar na lista
 
