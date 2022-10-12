@@ -4,6 +4,7 @@ const lista__body = document.querySelector('.lista-pessoas__body');
 const botoesCancelar = document.querySelectorAll('.botoes-cancelar');
 
 const modalEditPessoa = document.querySelector('.modal-editPessoa');
+const btnEditPessoa = document.querySelector('.form-editPessoa__btn-edit')
 const modalAddPessoa = document.querySelector('.modal-addPessoa');
 const btnAddPessoa = document.querySelector('.btn-addPessoa');
 const btnCadastrar = document.querySelector('.form-addPessoa__btn-add');
@@ -12,10 +13,14 @@ const btnCadastrar = document.querySelector('.form-addPessoa__btn-add');
 const inputAddNome = document.getElementById('form-addPessoa__input-nome');
 const inputAddEmail = document.getElementById('form-addPessoa__input-email');
 const inputAddData = document.getElementById('form-addPessoa__input-data');
+const inputEditNome = document.getElementById('form-editPessoa__input-nome');
+const inputEditEmail = document.getElementById('form-editPessoa__input-email');
+const inputEditData = document.getElementById('form-editPessoa__input-data');
 
 // EVENTOS
 btnAddPessoa.addEventListener('click', () => abrirModal(modalAddPessoa));
-btnCadastrar.addEventListener('click', validarDados_cadastro);
+btnCadastrar.addEventListener('click', () => validarDados('cadastrar', inputAddNome, inputAddEmail, inputAddData));
+btnEditPessoa.addEventListener('click', () => validarDados('editar', inputEditNome, inputEditEmail, inputEditData));
 botoesCancelar.forEach(botao => {
     botao.addEventListener('click', fecharModais);
 });
@@ -40,12 +45,15 @@ class Pessoa {
 let listaPessoas;
 const lerListaPessoas = () => listaPessoas = JSON.parse(localStorage.getItem('listaPessoas') || '[]');
 
-function validarDados_cadastro(){
+function validarDados(acao, inputNome, inputEmail, inputData){
     
+    let funcao = acao;
     let nomeValido = false;
-    inputAddNome.value.length < 3 ? alert('O nome da pessoa deve possuir no mínimo 3 caracteres!') : nomeValido = true;
+    inputNome.value.length < 3 ? alert('O nome da pessoa deve possuir no mínimo 3 caracteres!') : nomeValido = true;
     
-    nomeValido ? cadastrar() : console.log('erro');
+    !nomeValido ? console.log('erro') : 
+        funcao == 'cadastrar' ? cadastrar() : editarPessoa();
+            
 }
 
 function cadastrar(){
@@ -89,6 +97,10 @@ function adicionar_Lista(nome, email, data){
 
     lista__acoes.appendChild(btnEditar);
     lista__acoes.appendChild(btnRemover);
+}
+
+function editarPessoa(){
+    console.log('editar');
 }
 
 function carregarCadastros(){
