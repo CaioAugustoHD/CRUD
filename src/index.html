@@ -9,6 +9,7 @@
 </head>
 <body>
     <main>
+        <button type="button" class="btn-addPessoa">add</button>
         <table class="lista-pessoas" border="1">
             <thead>
                 <tr class="lista-pessoas__header">
@@ -20,6 +21,29 @@
             <tbody class="lista-pessoas__body">
             </tbody>
         </table>
-    </main>    
+    </main>
+    <section class="modal-addPessoa">
+        <form class="form-addPessoa">
+            <header>
+                <h2>Adicionar pessoa à lista</h2>
+            </header>
+            <div class="form-addPessoa__content">
+                <input type="text" id="form-addPessoa__input-nome">
+                <label for="form-addPessoa__input-nome">Nome</label>
+            </div>
+            <div class="form-addPessoa__content">
+                <input type="mail" id="form-addPessoa__input-email">
+                <label for="form-addPessoa__input-email">Email</label>
+            </div>
+            <div class="form-addPessoa__content">
+                <input type="date" id="form-addPessoa__input-data">
+                <label for="form-addPessoa__input-data">Data de nascimento</label>
+            </div>
+            <div class="form-addPessoa__content">
+                <button type="button" class="form-addPessoa__btn-add">Add</button>
+                <button type="button" class="form-addPessoa__btn-cancelar">Cancelar</button>
+            </div>
+        </form>
+    </section>  
 </body>
 </html>
