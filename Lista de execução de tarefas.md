@@ -22,7 +22,7 @@
 ### EDITAR
 - [x] Criar na lista uma coluna para os botões de editar e excluir
 - [x] Criar modal para editar pessoa
-- [ ] Função para abrir e fechar modal com botão
+- [x] Função para abrir e fechar modal de editar com botão
 - [ ] Criar função para editar dados de uma pessoa
 - [ ] Validar os dados antes de salvar as alterações
     - [ ] Nome com mais de 3 caracteres

@@ -3,6 +3,7 @@ const lista__body = document.querySelector('.lista-pessoas__body');
 
 const botoesCancelar = document.querySelectorAll('.botoes-cancelar');
 
+const modalEditPessoa = document.querySelector('.modal-editPessoa');
 const modalAddPessoa = document.querySelector('.modal-addPessoa');
 const btnAddPessoa = document.querySelector('.btn-addPessoa');
 const btnCadastrar = document.querySelector('.form-addPessoa__btn-add');
@@ -25,6 +26,7 @@ function abrirModal(modal){
 
 function fecharModais(){
     modalAddPessoa.style.display = 'none';
+    modalEditPessoa.style.display = 'none';
 }
 
 class Pessoa {
@@ -78,8 +80,7 @@ function adicionar_Lista(nome, email, data){
 
     const btnEditar = document.createElement('button');
     btnEditar.className = "lista-pessoas__btn-editPessoa"
-    btnEditar.addEventListener('click', () => {console.log('editar');
-    });
+    btnEditar.addEventListener('click', () => abrirModal(modalEditPessoa));
 
     const btnRemover = document.createElement('button');
     btnRemover.className = "lista-pessoas__btn-removerPessoa"
