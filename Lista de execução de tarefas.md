@@ -3,10 +3,12 @@
 ## CRUD
 - [x] Criar lista (nome, email, data de nascimento)
 - [x] Criar modal para cadastrar pessoa
+    - [x] Função para abrir e fechar modal com botão
     - [ ] Criar função de cadastrar pessoa
     - [ ] Verificar se o email ainda não foi cadastrado
     - [ ] Adicioná-la no localStorage
 - [ ] Criar modal para editar pessoa
+    - [ ] Função para abrir e fechar modal com botão
     - [ ] Criar função para editar dados de uma pessoa
     - [ ] Verificar se o email alterado ainda não foi cadastrado
     - [ ] Editar também no localStorage
