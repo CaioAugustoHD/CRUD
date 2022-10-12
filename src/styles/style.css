@@ -21,3 +21,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.lista-pessoas {
+    border-collapse: collapse;
+}
+
+.lista-pessoas__btn-editPessoa,
+.lista-pessoas__btn-removerPessoa {
+    width: 20px;
+    height: 18px;
+}

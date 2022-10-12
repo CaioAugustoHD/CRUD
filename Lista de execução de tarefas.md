@@ -20,6 +20,7 @@
 - [x] Carregar na lista as pessoas já cadastradas ao sair ou recarregar a página
 
 ### EDITAR
+- [x] Criar na lista uma coluna para os botões de editar e excluir
 - [ ] Criar modal para editar pessoa
 - [ ] Função para abrir e fechar modal com botão
 - [ ] Criar função para editar dados de uma pessoa

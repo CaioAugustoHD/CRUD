@@ -63,16 +63,31 @@ function adicionar_Lista(nome, email, data){
     const lista__nomePessoa = document.createElement('td');
     const lista__emailPessoa = document.createElement('td');
     const lista__dataPessoa = document.createElement('td');
+    const lista__acoes = document.createElement('td');
 
     lista__linha.appendChild(lista__nomePessoa);
     lista__linha.appendChild(lista__emailPessoa);
     lista__linha.appendChild(lista__dataPessoa);
+    lista__linha.appendChild(lista__acoes);
 
     lista__body.appendChild(lista__linha);
 
     lista__nomePessoa.innerHTML = nome;
     lista__emailPessoa.innerHTML = email;
     lista__dataPessoa.innerHTML = data;
+
+    const btnEditar = document.createElement('button');
+    btnEditar.className = "lista-pessoas__btn-editPessoa"
+    btnEditar.addEventListener('click', () => {console.log('editar');
+    });
+
+    const btnRemover = document.createElement('button');
+    btnRemover.className = "lista-pessoas__btn-removerPessoa"
+    btnRemover.addEventListener('click', () => {console.log('remover');
+    });
+
+    lista__acoes.appendChild(btnEditar);
+    lista__acoes.appendChild(btnRemover);
 }
 
 function carregarCadastros(){
