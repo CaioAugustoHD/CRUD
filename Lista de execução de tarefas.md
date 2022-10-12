@@ -17,7 +17,7 @@
 
 ### VISUALIZAR
 - [x] Função para gerar a lista de pessoas
-- [ ] Carregar na lista as pessoas já cadastradas ao sair ou recarregar a página
+- [x] Carregar na lista as pessoas já cadastradas ao sair ou recarregar a página
 
 ### EDITAR
 - [ ] Criar modal para editar pessoa

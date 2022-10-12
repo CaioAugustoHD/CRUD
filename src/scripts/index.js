@@ -74,3 +74,13 @@ function adicionar_Lista(nome, email, data){
     lista__emailPessoa.innerHTML = email;
     lista__dataPessoa.innerHTML = data;
 }
+
+function carregarCadastros(){
+
+    lerListaPessoas();
+    listaPessoas.forEach(pessoa => {
+        adicionar_Lista(pessoa.nome, pessoa.email, pessoa.data);
+    })
+}
+
+carregarCadastros();
