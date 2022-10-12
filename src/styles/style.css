@@ -7,7 +7,8 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
-.modal-addPessoa {
+.modal-addPessoa,
+.modal-editPessoa {
     position: absolute;
     top: 0;
     height: 100%;
@@ -15,7 +16,8 @@
     display: none;
 }
 
-.form-addPessoa {
+.form-addPessoa,
+.form-editPessoa {
     position: absolute;
     top: 50%;
     left: 50%;
