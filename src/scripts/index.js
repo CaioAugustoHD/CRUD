@@ -1,4 +1,5 @@
 const lista = document.querySelector('.lista-pessoas');
+const lista__body = document.querySelector('.lista-pessoas__body');
 
 const botoesCancelar = document.querySelectorAll('.botoes-cancelar');
 
@@ -52,4 +53,24 @@ function cadastrar(){
     let novaPessoa = new Pessoa (inputAddNome.value, inputAddEmail.value, inputAddData.value);
     listaPessoas.push(novaPessoa);
     localStorage.setItem('listaPessoas', JSON.stringify(listaPessoas));
+
+    adicionar_Lista(inputAddNome.value, inputAddEmail.value, inputAddData.value);
+}
+
+function adicionar_Lista(nome, email, data){
+
+    const lista__linha = document.createElement('tr');
+    const lista__nomePessoa = document.createElement('td');
+    const lista__emailPessoa = document.createElement('td');
+    const lista__dataPessoa = document.createElement('td');
+
+    lista__linha.appendChild(lista__nomePessoa);
+    lista__linha.appendChild(lista__emailPessoa);
+    lista__linha.appendChild(lista__dataPessoa);
+
+    lista__body.appendChild(lista__linha);
+
+    lista__nomePessoa.innerHTML = nome;
+    lista__emailPessoa.innerHTML = email;
+    lista__dataPessoa.innerHTML = data;
 }

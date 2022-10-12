@@ -13,10 +13,10 @@
     - [ ] Data válida
 - [x] Criar função de cadastrar pessoa
 - [x] Adicioná-la no localStorage
-- [ ] Adicioná-la na lista ao cadastrar
+- [x] Adicioná-la na lista ao cadastrar
 
 ### VISUALIZAR
-- [ ] Função para gerar a lista de pessoas
+- [x] Função para gerar a lista de pessoas
 - [ ] Carregar na lista as pessoas já cadastradas ao sair ou recarregar a página
 
 ### EDITAR
