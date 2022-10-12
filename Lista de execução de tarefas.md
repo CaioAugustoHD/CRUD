@@ -1,7 +1,7 @@
 # Lista de execução de tarefas do projeto
 
 ## CRUD
-- [ ] Criar tabela (nome, email, data de nascimento)
+- [x] Criar tabela (nome, email, data de nascimento)
 - [ ] Criar modal para cadastrar pessoa
     - [ ] Criar função de cadastrar pessoa
     - [ ] Verificar se o email ainda não foi cadastrado
