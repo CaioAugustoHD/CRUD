@@ -42,4 +42,14 @@ function validarDados_cadastro(){
     let nomeValido = false;
     inputAddNome.value.length < 3 ? alert('O nome da pessoa deve possuir no mínimo 3 caracteres!') : nomeValido = true;
     
+    nomeValido ? cadastrar() : console.log('erro');
+}
+
+function cadastrar(){
+    
+    lerListaPessoas();
+
+    let novaPessoa = new Pessoa (inputAddNome.value, inputAddEmail.value, inputAddData.value);
+    listaPessoas.push(novaPessoa);
+    localStorage.setItem('listaPessoas', JSON.stringify(listaPessoas));
 }

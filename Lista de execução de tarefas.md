@@ -11,8 +11,8 @@
     - [x] Nome com mais de 3 caracteres
     - [ ] Se o email ainda não foi cadastrado
     - [ ] Data válida
-- [ ] Criar função de cadastrar pessoa
-- [ ] Adicioná-la no localStorage
+- [x] Criar função de cadastrar pessoa
+- [x] Adicioná-la no localStorage
 - [ ] Adicioná-la na lista ao cadastrar
 
 ### VISUALIZAR
