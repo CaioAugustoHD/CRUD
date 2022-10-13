@@ -82,9 +82,14 @@ function validarEmail_add(){
     } 
     else if (inputAddEmail.checkValidity()){
 
+        let emailCadastrado = false;
         listaPessoas.forEach(pessoa => {
-            inputAddEmail.value == pessoa.email ? alert('email já cadastrado') : emailValido = true;
+            if(inputAddEmail.value == pessoa.email){
+                alert('email já cadastrado');
+                emailCadastrado = true;
+            }
         })
+        emailCadastrado ? null : emailValido = true;
     } 
     else {
         alert('email invalido');
