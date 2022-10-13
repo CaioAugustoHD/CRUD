@@ -68,6 +68,8 @@ function cadastrar(){
     localStorage.setItem('listaPessoas', JSON.stringify(listaPessoas));
 
     adicionar_Lista(inputAddNome.value, inputAddEmail.value, inputAddData.value);
+
+    fecharModais();
 }
 
 function adicionar_Lista(nome, email, data){
@@ -136,6 +138,8 @@ function editarPessoa(){
     pessoaSelecionada.children[0].innerHTML = pessoaEditada.nome;
     pessoaSelecionada.children[1].innerHTML = pessoaEditada.email;
     pessoaSelecionada.children[2].innerHTML = pessoaEditada.data;
+
+    fecharModais();
 }
 
 function carregarCadastros(){
