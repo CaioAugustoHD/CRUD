@@ -61,13 +61,14 @@ const lerListaPessoas = () => listaPessoas = JSON.parse(localStorage.getItem('li
 function validarDados(acao, inputNome, inputEmail, inputData){
 
     lerListaPessoas();
+
     let funcao = acao;
     let nomeValido = false;
     emailValido = false;
     inputNome.value.length < 3 ? alert('O nome da pessoa deve possuir no mínimo 3 caracteres!') : nomeValido = true;
     
-    funcao == 'cadastrar' ? validarEmail_add() : null;
-    
+    funcao == 'cadastrar' ? validarEmail_add() : validarEmail_edit();
+
     !nomeValido ? null :
         !emailValido ? null :
             funcao == 'cadastrar' ? cadastrar() : editarPessoa();
@@ -87,6 +88,32 @@ function validarEmail_add(){
     } 
     else {
         alert('email invalido');
+    }
+}
+
+function validarEmail_edit(){
+
+    if(listaPessoas[pessoaSelecionada_index].email == inputEditEmail.value){
+        emailValido = true;
+    } else {
+        if(inputEditEmail.value == ''){
+            alert('preencha esse campo de email');
+        } 
+        else if (inputEditEmail.checkValidity()){
+
+            let emailCadastrado = false;
+            listaPessoas.forEach(pessoa => {
+                if(inputEditEmail.value == pessoa.email){
+                    alert('email já cadastrado');
+                    emailCadastrado = true;
+                }
+            })
+            emailCadastrado ? null : emailValido = true;
+        }
+        else {
+            alert('email invalido');
+        }
+        
     }
 }
 
