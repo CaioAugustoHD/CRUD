@@ -93,6 +93,8 @@ function adicionar_Lista(nome, email, data){
     lista__linha.appendChild(lista__dataPessoa);
     lista__linha.appendChild(lista__acoes);
 
+    lista__acoes.className = 'lista-pessoas__content-btn';
+
     lista__body.appendChild(lista__linha);
 
     lista__nomePessoa.innerHTML = nome;
