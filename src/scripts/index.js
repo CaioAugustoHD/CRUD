@@ -35,6 +35,10 @@ function abrirModal(modal){
 function fecharModais(){
     modalAddPessoa.style.display = 'none';
     modalEditPessoa.style.display = 'none';
+
+    inputAddNome.value = '';
+    inputAddEmail.value = '';
+    inputAddData.value = '';
 }
 
 class Pessoa {
