@@ -25,6 +25,9 @@ botoesCancelar.forEach(botao => {
     botao.addEventListener('click', fecharModais);
 });
 
+let pessoaSelecionada
+let pessoaSelecionada_index
+
 function abrirModal(modal){
     modal.style.display = 'block';
 }
@@ -46,7 +49,7 @@ let listaPessoas;
 const lerListaPessoas = () => listaPessoas = JSON.parse(localStorage.getItem('listaPessoas') || '[]');
 
 function validarDados(acao, inputNome, inputEmail, inputData){
-    
+
     let funcao = acao;
     let nomeValido = false;
     inputNome.value.length < 3 ? alert('O nome da pessoa deve possuir no mínimo 3 caracteres!') : nomeValido = true;
@@ -88,7 +91,10 @@ function adicionar_Lista(nome, email, data){
 
     const btnEditar = document.createElement('button');
     btnEditar.className = "lista-pessoas__btn-editPessoa"
-    btnEditar.addEventListener('click', () => abrirModal(modalEditPessoa));
+    btnEditar.addEventListener('click', () => {
+        abrirModal(modalEditPessoa);
+        capturarDados();
+    });
 
     const btnRemover = document.createElement('button');
     btnRemover.className = "lista-pessoas__btn-removerPessoa"
@@ -97,6 +103,23 @@ function adicionar_Lista(nome, email, data){
 
     lista__acoes.appendChild(btnEditar);
     lista__acoes.appendChild(btnRemover);
+}
+
+function capturarDados(){
+
+    pessoaSelecionada = event.target.parentElement.parentElement;
+    let pessoaSelecionada_email = pessoaSelecionada.children[1].textContent;
+    
+    lerListaPessoas();
+    listaPessoas.forEach((pessoa, index) => {
+        if (pessoaSelecionada_email == pessoa.email){
+            pessoaSelecionada_index = index;
+            
+            inputEditNome.value = pessoa.nome;
+            inputEditEmail.value = pessoa.email;
+            inputEditData.value = pessoa.data;
+        }
+    });
 }
 
 function editarPessoa(){

@@ -24,7 +24,7 @@
 - [x] Criar modal para editar pessoa
 - [x] Função para abrir e fechar modal de editar com botão
 - [ ] Criar função para editar dados de uma pessoa
-    - [ ] Ao abrir o modal, mostrar nos inputs os dados da pessoa para editar
+    - [x] Ao abrir o modal, mostrar nos inputs os dados da pessoa para editar
 - [ ] Validar os dados antes de salvar as alterações
     - [x] Nome com mais de 3 caracteres
     - [ ] Se o email alterado ainda não foi cadastrado
