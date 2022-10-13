@@ -30,7 +30,7 @@
     - [ ] Se o email alterado ainda não foi cadastrado
     - [ ] Data válida
 - [x] Salvar no localStorage
-- [ ] Atualizar na lista
+- [x] Atualizar na lista
 
 ### EXCLUIR
 - [ ] Criar botão para excluir pessoa

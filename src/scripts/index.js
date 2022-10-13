@@ -132,6 +132,10 @@ function editarPessoa(){
 
     listaPessoas[pessoaSelecionada_index] = pessoaEditada;
     localStorage.setItem('listaPessoas', JSON.stringify(listaPessoas));
+
+    pessoaSelecionada.children[0].innerHTML = pessoaEditada.nome;
+    pessoaSelecionada.children[1].innerHTML = pessoaEditada.email;
+    pessoaSelecionada.children[2].innerHTML = pessoaEditada.data;
 }
 
 function carregarCadastros(){
