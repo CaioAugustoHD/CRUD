@@ -114,7 +114,7 @@ function capturarDados(){
     listaPessoas.forEach((pessoa, index) => {
         if (pessoaSelecionada_email == pessoa.email){
             pessoaSelecionada_index = index;
-            
+
             inputEditNome.value = pessoa.nome;
             inputEditEmail.value = pessoa.email;
             inputEditData.value = pessoa.data;
@@ -123,7 +123,15 @@ function capturarDados(){
 }
 
 function editarPessoa(){
-    console.log('editar');
+    
+    let pessoaEditada = {
+        nome: inputEditNome.value,
+        email: inputEditEmail.value,
+        data: inputEditData.value
+    }
+
+    listaPessoas[pessoaSelecionada_index] = pessoaEditada;
+    localStorage.setItem('listaPessoas', JSON.stringify(listaPessoas));
 }
 
 function carregarCadastros(){
