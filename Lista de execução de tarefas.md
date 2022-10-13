@@ -38,6 +38,9 @@
     - [x] Abrir modal de confirmação para confirmar remoção
 
 ## ESTILIZAÇÃO
+- [ ] Definir layout página
+    -[x] Estrutura lista
+    - [ ] Estrutura modais
 - [ ] Colocar máscara no input data de nascimento
 - [ ] Definir cores
 - [ ] Estilizar botões
