@@ -33,7 +33,7 @@
 - [x] Atualizar na lista
 
 ### EXCLUIR
-- [ ] Criar botão para excluir pessoa
+- [x] Criar botão para excluir pessoa
     - [ ] Modal de confirmação de exclusão
 
 ## ESTILIZAÇÃO

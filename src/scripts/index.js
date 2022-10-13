@@ -104,7 +104,9 @@ function adicionar_Lista(nome, email, data){
 
     const btnRemover = document.createElement('button');
     btnRemover.className = "lista-pessoas__btn-removerPessoa"
-    btnRemover.addEventListener('click', () => {console.log('remover');
+    btnRemover.addEventListener('click', () => {
+        capturarDados();
+        removerPessoa();
     });
 
     lista__acoes.appendChild(btnEditar);
@@ -144,6 +146,17 @@ function editarPessoa(){
     pessoaSelecionada.children[2].innerHTML = pessoaEditada.data;
 
     fecharModais();
+}
+
+function removerPessoa(){
+    const remover = confirm('Deseja mesmo remover pessoa?');
+    if (remover){
+        listaPessoas.splice(pessoaSelecionada_index, 1);
+        localStorage.setItem('listaPessoas', JSON.stringify(listaPessoas));
+
+        pessoaSelecionada.remove();
+    }
+
 }
 
 function carregarCadastros(){
