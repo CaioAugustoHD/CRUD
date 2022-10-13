@@ -3,6 +3,8 @@ const lista__body = document.querySelector('.lista-pessoas__body');
 
 const botoesCancelar = document.querySelectorAll('.botoes-cancelar');
 
+const modalRemoverPessoa = document.querySelector('.modal-removerPessoa');
+const btnRemoverPessoa = document.querySelector('.modal-removerPessoa__btn-remover');
 const modalEditPessoa = document.querySelector('.modal-editPessoa');
 const btnEditPessoa = document.querySelector('.form-editPessoa__btn-edit')
 const modalAddPessoa = document.querySelector('.modal-addPessoa');
@@ -21,6 +23,7 @@ const inputEditData = document.getElementById('form-editPessoa__input-data');
 btnAddPessoa.addEventListener('click', () => abrirModal(modalAddPessoa));
 btnCadastrar.addEventListener('click', () => validarDados('cadastrar', inputAddNome, inputAddEmail, inputAddData));
 btnEditPessoa.addEventListener('click', () => validarDados('editar', inputEditNome, inputEditEmail, inputEditData));
+btnRemoverPessoa.addEventListener('click', () => removerPessoa());
 botoesCancelar.forEach(botao => {
     botao.addEventListener('click', fecharModais);
 });
@@ -35,6 +38,7 @@ function abrirModal(modal){
 function fecharModais(){
     modalAddPessoa.style.display = 'none';
     modalEditPessoa.style.display = 'none';
+    modalRemoverPessoa.style.display = 'none';
 
     inputAddNome.value = '';
     inputAddEmail.value = '';
@@ -106,7 +110,8 @@ function adicionar_Lista(nome, email, data){
     btnRemover.className = "lista-pessoas__btn-removerPessoa"
     btnRemover.addEventListener('click', () => {
         capturarDados();
-        removerPessoa();
+        msgRemoverPessoa();
+        abrirModal(modalRemoverPessoa);
     });
 
     lista__acoes.appendChild(btnEditar);
@@ -148,14 +153,18 @@ function editarPessoa(){
     fecharModais();
 }
 
-function removerPessoa(){
-    const remover = confirm('Deseja mesmo remover pessoa?');
-    if (remover){
-        listaPessoas.splice(pessoaSelecionada_index, 1);
-        localStorage.setItem('listaPessoas', JSON.stringify(listaPessoas));
+function msgRemoverPessoa(){
+    let mensagem = document.querySelector('.modal-removerPessoa__mensagem');
+    mensagem.innerHTML = `Deseja mesmo remover ${listaPessoas[pessoaSelecionada_index].nome}`;
+}
 
-        pessoaSelecionada.remove();
-    }
+function removerPessoa(){
+
+    listaPessoas.splice(pessoaSelecionada_index, 1);
+    localStorage.setItem('listaPessoas', JSON.stringify(listaPessoas));
+
+    pessoaSelecionada.remove();
+    fecharModais();
 
 }
 

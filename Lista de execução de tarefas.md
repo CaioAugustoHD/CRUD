@@ -35,7 +35,7 @@
 ### EXCLUIR
 - [x] Criar botão para excluir pessoa
     - [x] Criar modal de confirmação de exclusão
-    - [ ] Abrir modal de confirmação ao apertar botão 
+    - [x] Abrir modal de confirmação para confirmar remoção
 
 ## ESTILIZAÇÃO
 - [ ] Colocar máscara no input data de nascimento
