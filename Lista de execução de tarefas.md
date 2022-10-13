@@ -39,8 +39,9 @@
 
 ## ESTILIZAÇÃO
 - [ ] Definir layout página
-    -[x] Estrutura lista
-    - [ ] Estrutura modais
+    - [x] Estrutura lista
+    - [x] Estrutura modais
+- [ ] Animação nos inputs
 - [ ] Colocar máscara no input data de nascimento
 - [ ] Definir cores
 - [ ] Estilizar botões

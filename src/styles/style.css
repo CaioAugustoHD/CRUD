@@ -42,14 +42,14 @@ td.lista-pessoas__content-btn {
     margin: auto;
 }
 
-.modal-addPessoa,
-.modal-editPessoa,
-.modal-removerPessoa {
+/* MODAIS */
+.modal {
     position: absolute;
     top: 0;
     height: 100%;
     width: 100%;
     display: none;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .form-addPessoa,
@@ -59,4 +59,55 @@ td.lista-pessoas__content-btn {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: #FAFAFA;
+    padding: 2em;
+    width: 400px;
+}
+
+.modal__mensagem {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.form__content-flutuante {
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.form__content-flutuante label,
+.form__content-flutuante label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all 300ms ease-out;
+}
+
+.input-modal{
+    width: 100%;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #000;
+    background-color: transparent;
+    outline: 0;
+    transition: all 300ms ease-out;
+}
+
+.input-modal:focus {
+
+    border-color: rgb(98, 79, 79)
+}
+
+.input-modal:focus + label,
+.input-preenchido {
+    font-size: 13px;
+    margin-top: 0;
+}
+
+.form-addPessoa__label-data,
+.form-editPessoa__label-data {
+    display: block;
+    margin-bottom: 0.5em;
 }

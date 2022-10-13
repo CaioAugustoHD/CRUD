@@ -26,19 +26,19 @@
     <section class="modal-addPessoa modal">
         <form class="form-addPessoa">
             <header>
-                <h2>Adicionar pessoa à lista</h2>
+                <h2 class="modal__mensagem">Cadastrar nova pessoa</h2>
             </header>
-            <div class="form-addPessoa__content">
+            <div class="form-addPessoa__content form__content-flutuante">
                 <input type="text" class="input-modal" id="form-addPessoa__input-nome">
                 <label for="form-addPessoa__input-nome">Nome</label>
             </div>
-            <div class="form-addPessoa__content">
+            <div class="form-addPessoa__content form__content-flutuante">
                 <input type="email" class="input-modal" id="form-addPessoa__input-email">
                 <label for="form-addPessoa__input-email">Email</label>
             </div>
             <div class="form-addPessoa__content">
-                <input type="date" class="input-modal" id="form-addPessoa__input-data">
-                <label for="form-addPessoa__input-data">Data de nascimento</label>
+                <label for="form-addPessoa__input-data" class="form-addPessoa__label-data">Data de nascimento</label>
+                <input type="date" id="form-addPessoa__input-data">
             </div>
             <div class="form-addPessoa__content">
                 <button type="button" class="form-addPessoa__btn-add">Add</button>
@@ -49,19 +49,19 @@
     <section class="modal-editPessoa modal">
         <form class="form-editPessoa">
             <header>
-                <h2>Editar dados</h2>
+                <h2 class="modal__mensagem">Editar dados</h2>
             </header>
-            <div class="form-editPessoa__content">
+            <div class="form-editPessoa__content form__content-flutuante">
                 <input type="text" class="input-modal" id="form-editPessoa__input-nome">
                 <label for="form-editPessoa__input-nome">Nome</label>
             </div>
-            <div class="form-editPessoa__content">
+            <div class="form-editPessoa__content form__content-flutuante">
                 <input type="mail" class="input-modal" id="form-editPessoa__input-email">
                 <label for="form-editPessoa__input-email">Email</label>
             </div>
             <div class="form-editPessoa__content">
-                <input type="date" class="input-modal" id="form-editPessoa__input-data">
-                <label for="form-editPessoa__input-data">Data de nascimento</label>
+                <label for="form-editPessoa__input-data" class="form-editPessoa__label-data">Data de nascimento</label>
+                <input type="date" id="form-editPessoa__input-data">
             </div>
             <div class="form-editPessoa__content">
                 <button type="button" class="form-editPessoa__btn-edit">Salvar</button>
@@ -71,7 +71,7 @@
     </section>
     <section class="modal-removerPessoa modal">
         <section class="modal-removerPessoa__section">
-            <h2 class="modal-removerPessoa__mensagem"></h2>
+            <h2 class="modal-removerPessoa__mensagem modal__mensagem"></h2>
             <div class="modal-removerPessoa__content">
                 <button type="button" class="modal-removerPessoa__btn-remover">Remover</button>
                 <button type="button" class="modal-removerPessoa__btn-cancelar botoes-cancelar">Cancelar</button>
