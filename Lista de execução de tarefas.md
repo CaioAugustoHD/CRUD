@@ -9,7 +9,7 @@
 - [x] Criar classe e declarar variáveis para função de cadastro
 - [ ] Antes de cadastrar, Validar os dados
     - [x] Nome com mais de 3 caracteres
-    - [ ] Se o email ainda não foi cadastrado
+    - [x] Se o email é válido e ainda não foi cadastrado
     - [ ] Data válida
 - [x] Criar função de cadastrar pessoa
 - [x] Adicioná-la no localStorage

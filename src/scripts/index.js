@@ -31,6 +31,8 @@ botoesCancelar.forEach(botao => {
 let pessoaSelecionada
 let pessoaSelecionada_index
 
+let emailValido;
+
 function abrirModal(modal){
     modal.style.display = 'block';
 }
@@ -58,13 +60,34 @@ const lerListaPessoas = () => listaPessoas = JSON.parse(localStorage.getItem('li
 
 function validarDados(acao, inputNome, inputEmail, inputData){
 
+    lerListaPessoas();
     let funcao = acao;
     let nomeValido = false;
+    emailValido = false;
     inputNome.value.length < 3 ? alert('O nome da pessoa deve possuir no mínimo 3 caracteres!') : nomeValido = true;
     
-    !nomeValido ? console.log('erro') : 
-        funcao == 'cadastrar' ? cadastrar() : editarPessoa();
+    funcao == 'cadastrar' ? validarEmail_add() : null;
+    
+    !nomeValido ? null :
+        !emailValido ? null :
+            funcao == 'cadastrar' ? cadastrar() : editarPessoa();
             
+}
+
+function validarEmail_add(){
+
+    if(inputAddEmail.value == ''){
+        alert('preencha esse campo de email')
+    } 
+    else if (inputAddEmail.checkValidity()){
+
+        listaPessoas.forEach(pessoa => {
+            inputAddEmail.value == pessoa.email ? alert('email já cadastrado') : emailValido = true;
+        })
+    } 
+    else {
+        alert('email invalido');
+    }
 }
 
 function cadastrar(){
