@@ -32,14 +32,6 @@ td.lista-pessoas__content-btn {
     justify-content: space-evenly;
 }
 
-.lista-pessoas__btn-editPessoa,
-.lista-pessoas__btn-removerPessoa {
-    width: 20px;
-    height: 20px;
-}
-
-
-
 /* MODAIS */
 .modal {
     position: absolute;
@@ -143,4 +135,24 @@ td.lista-pessoas__content-btn {
     border: 0;
     background-color: transparent;
     margin-left: 20px;
+}
+
+.lista-pessoas__btn-editPessoa {
+    width: 26px;
+    height: 26px;
+    border-radius: 5px;
+    background-image: url('../assets/iconedit.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 24px;
+}
+
+.lista-pessoas__btn-removerPessoa {
+    width: 26px;
+    height: 26px;
+    border-radius: 5px;
+    background-image: url('../assets/icondelete.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 24px;
 }

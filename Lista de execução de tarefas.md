@@ -44,8 +44,8 @@
 - [ ] Mensagem de erro estilizada
 - [ ] Animação nos inputs
 - [ ] Definir cores
-- [ ] Estilizar botões
-    - [ ] Botões da lista
+- [x] Estilizar botões
+    - [x] Botões da lista
     - [x] Outros botões
 - [ ] Estilizar modais e deixar responsivo
 - [ ] Estilizar lista
