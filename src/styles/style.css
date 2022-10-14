@@ -123,6 +123,11 @@ td.lista-pessoas__content-btn {
     visibility: hidden;
 }
 
+div.modal-removerPessoa__content {
+    display: flex;
+    justify-content: center;
+}
+
 /* BOTÕES */
 .modal-removerPessoa__btn-remover,
 .form-editPessoa__btn-edit,

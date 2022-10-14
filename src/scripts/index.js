@@ -259,7 +259,7 @@ function editarPessoa(){
 
 function msgRemoverPessoa(){
     let mensagem = document.querySelector('.modal-removerPessoa__mensagem');
-    mensagem.innerHTML = `Deseja mesmo remover ${listaPessoas[pessoaSelecionada_index].nome}`;
+    mensagem.innerHTML = `Deseja mesmo remover ${listaPessoas[pessoaSelecionada_index].nome}?`;
 }
 
 function removerPessoa(){
