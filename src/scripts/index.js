@@ -178,7 +178,8 @@ function adicionar_Lista(nome, email, data){
 
     lista__nomePessoa.innerHTML = nome;
     lista__emailPessoa.innerHTML = email;
-    lista__dataPessoa.innerHTML = data;
+    let dataFormatada = new Intl.DateTimeFormat('pt-BR', {day: 'numeric', month: 'short', year: 'numeric'}).format(new Date(`${data} 13:00:00`));
+    lista__dataPessoa.innerHTML = dataFormatada;
 
     const btnEditar = document.createElement('button');
     btnEditar.className = "lista-pessoas__btn-editPessoa"
@@ -229,7 +230,9 @@ function editarPessoa(){
 
     pessoaSelecionada.children[0].innerHTML = pessoaEditada.nome;
     pessoaSelecionada.children[1].innerHTML = pessoaEditada.email;
-    pessoaSelecionada.children[2].innerHTML = pessoaEditada.data;
+
+    let dataFormatada = new Intl.DateTimeFormat('pt-BR', {day: 'numeric', month: 'short', year: 'numeric'}).format(new Date(`${pessoaEditada.data} 13:00:00`));
+    pessoaSelecionada.children[2].innerHTML = dataFormatada;
 
     fecharModais();
 }
