@@ -42,7 +42,7 @@
     - [x] Estrutura lista
     - [x] Estrutura modais
 - [x] Mensagem de erro estilizada
-    - [ ] Mensagem de erro desaparecer após input voltar a receber o foco
+    - [x] Mensagem de erro desaparecer após input voltar a receber o foco
 - [x] Animação nos inputs
 - [ ] Estilizar inputs
 - [ ] Definir cores

@@ -156,6 +156,14 @@ function msgErro(input, msg){
     msgErro_span.style.visibility = 'visible';
 }
 
+function ocultarMsgErro(input){
+
+    let content = input.parentElement;
+    const msgErro_span = content.querySelector('.form-addPessoa__msg-erro');
+
+    msgErro_span.style.visibility = 'hidden';
+}
+
 function cadastrar(){
     
     lerListaPessoas();
