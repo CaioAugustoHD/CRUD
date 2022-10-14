@@ -49,7 +49,7 @@
 - [x] Estilizar botões
     - [x] Botões da lista
     - [x] Outros botões
-- [ ] Estilizar modais e deixar responsivo
+- [ ] Estilizar modais
+- [ ] Deixar modais responsivos
 - [ ] Estilizar lista
-    - [ ] Deixar lista responsiva
-- [ ] Deixar resto do site responsivo
+- [ ] Deixar lista responsiva

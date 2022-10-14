@@ -43,9 +43,11 @@ function fecharModais(){
     modalEditPessoa.style.display = 'none';
     modalRemoverPessoa.style.display = 'none';
 
-    inputAddNome.value = '';
-    inputAddEmail.value = '';
-    inputAddData.value = '';
+    let inputs = [inputAddNome, inputAddEmail, inputAddData];
+    inputs.forEach(input => {
+        input.value = '';
+        ocultarMsgErro(input);
+    })
 }
 
 class Pessoa {
