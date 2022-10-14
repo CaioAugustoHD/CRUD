@@ -43,7 +43,6 @@
     - [x] Estrutura modais
 - [ ] Mensagem de erro estilizada
 - [ ] Animação nos inputs
-- [ ] Colocar máscara no input data de nascimento
 - [ ] Definir cores
 - [ ] Estilizar botões
 - [ ] Estilizar modais e deixar responsivo

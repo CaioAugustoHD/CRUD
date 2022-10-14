@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,200" />
     <title>CRUD</title>
 </head>
 <body>
@@ -21,12 +22,12 @@
             <tbody class="lista-pessoas__body">
             </tbody>
         </table>
-        <button type="button" class="btn-addPessoa">add</button>
+        <button type="button" class="btn-addPessoa"><span class="material-symbols-outlined">person_add</span>Adicionar</button>
     </main>
     <section class="modal-addPessoa modal">
         <form class="form-addPessoa">
             <header>
-                <h2 class="modal__mensagem">Cadastrar nova pessoa</h2>
+                <h2 class="modal__mensagem">Adicionar nova pessoa</h2>
             </header>
             <div class="form-addPessoa__content form__content-flutuante">
                 <input type="text" class="input-modal" id="form-addPessoa__input-nome">
@@ -41,7 +42,7 @@
                 <input type="date" id="form-addPessoa__input-data">
             </div>
             <div class="form-addPessoa__content">
-                <button type="button" class="form-addPessoa__btn-add">Add</button>
+                <button type="button" class="form-addPessoa__btn-add"><span class="material-symbols-outlined">person_add</span>Adicionar</button>
                 <button type="button" class="form-addPessoa__btn-cancelar botoes-cancelar">Cancelar</button>
             </div>
         </form>
@@ -64,7 +65,7 @@
                 <input type="date" id="form-editPessoa__input-data">
             </div>
             <div class="form-editPessoa__content">
-                <button type="button" class="form-editPessoa__btn-edit">Salvar</button>
+                <button type="button" class="form-editPessoa__btn-edit"><span class="material-symbols-outlined">edit_note</span>Salvar</button>
                 <button type="button" class="form-editPessoa__btn-cancelar botoes-cancelar">Cancelar</button>
             </div>
         </form>
