@@ -67,11 +67,11 @@ function validarDados(acao, inputNome, inputEmail, inputData){
     let nomeValido = false;
     emailValido = false;
     dataValida = false;
-    inputNome.value.length < 3 ? alert('O nome da pessoa deve possuir no mínimo 3 caracteres!') : nomeValido = true;
+    inputNome.value.length < 3 ? msgErro(inputNome, 'O nome deve possuir no mínimo 3 caracteres!') : nomeValido = true;
     
     funcao == 'cadastrar' ? validarEmail_add() : validarEmail_edit();
 
-    inputData.value == '' ? alert('Insira uma data válida') : validarData(inputData);
+    inputData.value == '' ? msgErro(inputData, 'Insira uma data válida!') : validarData(inputData);
 
     !nomeValido ? null :
         !emailValido ? null :
@@ -82,21 +82,21 @@ function validarDados(acao, inputNome, inputEmail, inputData){
 function validarEmail_add(){
 
     if(inputAddEmail.value == ''){
-        alert('preencha esse campo de email')
+        msgErro(inputAddEmail, 'Preencha esse campo!');
     } 
     else if (inputAddEmail.checkValidity()){
 
         let emailCadastrado = false;
         listaPessoas.forEach(pessoa => {
             if(inputAddEmail.value == pessoa.email){
-                alert('email já cadastrado');
+                msgErro(inputAddEmail, 'Email já cadastrado!');
                 emailCadastrado = true;
             }
         })
         emailCadastrado ? null : emailValido = true;
     } 
     else {
-        alert('email invalido');
+        msgErro(inputAddEmail, 'Email inválido!');
     }
 }
 
@@ -106,21 +106,21 @@ function validarEmail_edit(){
         emailValido = true;
     } else {
         if(inputEditEmail.value == ''){
-            alert('preencha esse campo de email');
+            msgErro(inputEditEmail, 'Preencha esse campo!');
         } 
         else if (inputEditEmail.checkValidity()){
 
             let emailCadastrado = false;
             listaPessoas.forEach(pessoa => {
                 if(inputEditEmail.value == pessoa.email){
-                    alert('email já cadastrado');
+                    msgErro(inputEditEmail, 'Email já cadastrado!');
                     emailCadastrado = true;
                 }
             })
             emailCadastrado ? null : emailValido = true;
         }
         else {
-            alert('email invalido');
+            msgErro(inputEditEmail, 'Email inválido!');
         }
         
     }
@@ -142,8 +142,18 @@ function validarData(input){
         dataValida = true;
     }
     else {
-        alert('Insira uma data válida')
+        msgErro(input, 'Insira uma data válida!');
     }
+}
+
+function msgErro(input, msg){
+
+    let content = input.parentElement;
+    const msgErro_span = content.querySelector('.form-addPessoa__msg-erro');
+
+    msgErro_span.innerHTML = msg;
+    
+    msgErro_span.style.visibility = 'visible';
 }
 
 function cadastrar(){

@@ -41,7 +41,8 @@
 - [x] Definir layout página
     - [x] Estrutura lista
     - [x] Estrutura modais
-- [ ] Mensagem de erro estilizada
+- [x] Mensagem de erro estilizada
+    - [ ] Mensagem de erro desaparecer após input voltar a receber o foco
 - [x] Animação nos inputs
 - [ ] Estilizar inputs
 - [ ] Definir cores
