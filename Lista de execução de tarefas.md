@@ -7,10 +7,10 @@
 - [x] Criar modal para cadastrar pessoa
 - [x] Abrir e fechar modal com botão
 - [x] Criar classe e declarar variáveis para função de cadastro
-- [ ] Antes de cadastrar, Validar os dados
+- [x] Antes de cadastrar, Validar os dados
     - [x] Nome com mais de 3 caracteres
     - [x] Se o email é válido e ainda não foi cadastrado
-    - [ ] Data válida
+    - [x] Data válida
 - [x] Criar função de cadastrar pessoa
 - [x] Adicioná-la no localStorage
 - [x] Adicioná-la na lista ao cadastrar
@@ -25,10 +25,10 @@
 - [x] Função para abrir e fechar modal de editar com botão
 - [x] Criar função para editar dados de uma pessoa
     - [x] Ao abrir o modal, mostrar nos inputs os dados da pessoa para editar
-- [ ] Validar os dados antes de salvar as alterações
+- [x] Validar os dados antes de salvar as alterações
     - [x] Nome com mais de 3 caracteres
     - [x] Se o email alterado ainda não foi cadastrado
-    - [ ] Data válida
+    - [x] Data válida
 - [x] Salvar no localStorage
 - [x] Atualizar na lista
 
@@ -38,9 +38,10 @@
     - [x] Abrir modal de confirmação para confirmar remoção
 
 ## ESTILIZAÇÃO
-- [ ] Definir layout página
+- [x] Definir layout página
     - [x] Estrutura lista
     - [x] Estrutura modais
+- [ ] Mensagem de erro estilizada
 - [ ] Animação nos inputs
 - [ ] Colocar máscara no input data de nascimento
 - [ ] Definir cores

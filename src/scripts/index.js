@@ -32,6 +32,7 @@ let pessoaSelecionada
 let pessoaSelecionada_index
 
 let emailValido;
+let dataValida;
 
 function abrirModal(modal){
     modal.style.display = 'block';
@@ -65,14 +66,17 @@ function validarDados(acao, inputNome, inputEmail, inputData){
     let funcao = acao;
     let nomeValido = false;
     emailValido = false;
+    dataValida = false;
     inputNome.value.length < 3 ? alert('O nome da pessoa deve possuir no mínimo 3 caracteres!') : nomeValido = true;
     
     funcao == 'cadastrar' ? validarEmail_add() : validarEmail_edit();
 
+    inputData.value == '' ? alert('Insira uma data válida') : validarData(inputData);
+
     !nomeValido ? null :
         !emailValido ? null :
-            funcao == 'cadastrar' ? cadastrar() : editarPessoa();
-            
+            !dataValida ? null :
+                funcao == 'cadastrar' ? cadastrar() : editarPessoa();      
 }
 
 function validarEmail_add(){
@@ -119,6 +123,26 @@ function validarEmail_edit(){
             alert('email invalido');
         }
         
+    }
+}
+
+function validarData(input){
+
+    let data = new Date();
+    let diaAtual = data.getDate();
+    let mesAtual = data.getMonth();
+    let anoAtual = data.getFullYear();
+
+    let dataNascimento = new Date(`${input.value} 13:00:00`);
+
+    if(dataNascimento <= data){
+        dataValida = true;
+    }    
+    else if(dataNascimento.getFullYear() == anoAtual && dataNascimento.getMonth() == mesAtual && dataNascimento.getDate() == diaAtual){
+        dataValida = true;
+    }
+    else {
+        alert('Insira uma data válida')
     }
 }
 
