@@ -72,7 +72,7 @@ td.lista-pessoas__content-btn {
     top: 0;
     left: 0;
     margin-top: 13px;
-    transition: all 300ms ease-out;
+    transition: all 200ms ease-out;
 }
 
 .input-modal{
@@ -82,7 +82,9 @@ td.lista-pessoas__content-btn {
     border-bottom: 2px solid #000;
     background-color: transparent;
     outline: 0;
-    transition: all 300ms ease-out;
+    transition: all 200ms ease-out;
+    padding: 4px 1px 7px;
+    font-size: 1em;
 }
 
 .input-modal:focus {
@@ -99,7 +101,17 @@ td.lista-pessoas__content-btn {
 .form-addPessoa__label-data,
 .form-editPessoa__label-data {
     display: block;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.7em;
+}
+
+#form-editPessoa__input-data,
+#form-addPessoa__input-data {
+    padding: 5px 1px;
+    font-size: 0.9em;
+    border: 0;
+    border-bottom: 2px solid #000;
+    background-color: transparent;
+    outline: 0;
 }
 
 .modal_content-btn {

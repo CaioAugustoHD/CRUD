@@ -44,7 +44,7 @@
 - [x] Mensagem de erro estilizada
     - [x] Mensagem de erro desaparecer após input voltar a receber o foco
 - [x] Animação nos inputs
-- [ ] Estilizar inputs
+- [x] Estilizar inputs
 - [ ] Definir cores
 - [x] Estilizar botões
     - [x] Botões da lista
