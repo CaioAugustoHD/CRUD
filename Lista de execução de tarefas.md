@@ -45,6 +45,8 @@
 - [ ] Animação nos inputs
 - [ ] Definir cores
 - [ ] Estilizar botões
+    - [ ] Botões da lista
+    - [x] Outros botões
 - [ ] Estilizar modais e deixar responsivo
 - [ ] Estilizar lista
     - [ ] Deixar lista responsiva

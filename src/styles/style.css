@@ -7,6 +7,7 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+/* LISTA DE PESSOAS */
 .lista-pessoas {
     width: 70%;
     margin: 30px auto;
@@ -37,10 +38,7 @@ td.lista-pessoas__content-btn {
     height: 20px;
 }
 
-.btn-addPessoa {
-    display: block;
-    margin: auto;
-}
+
 
 /* MODAIS */
 .modal {
@@ -73,7 +71,7 @@ td.lista-pessoas__content-btn {
     position: relative;
     padding-top: 13px;
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 8%;
 }
 
 .form__content-flutuante label,
@@ -110,4 +108,39 @@ td.lista-pessoas__content-btn {
 .form-editPessoa__label-data {
     display: block;
     margin-bottom: 0.5em;
+}
+
+.modal_content-btn {
+    margin-top: 3em;
+}
+
+/* BOTÕES */
+.modal-removerPessoa__btn-remover,
+.form-editPessoa__btn-edit,
+.form-addPessoa__btn-add {
+    padding: 0.7em 1em 0.5em;
+    border-radius: 20px;
+}
+
+.btn-addPessoa {
+    display: block;
+    margin: auto;
+    width: 10em;
+    padding: 0.5em 0.5em 0.7em;
+    font-size: 1em;
+    border-radius: 20px;
+}
+
+.btn-icone {
+    vertical-align: middle;
+}
+
+.btn-addPessoa .btn-icone {
+    vertical-align: sub;
+}
+
+.botoes-cancelar {
+    border: 0;
+    background-color: transparent;
+    margin-left: 20px;
 }
