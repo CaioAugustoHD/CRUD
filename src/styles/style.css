@@ -91,7 +91,7 @@ td.lista-pessoas__content-btn {
 }
 
 .input-modal:focus + label,
-.input-preenchido {
+.input-modal:not(:placeholder-shown) + label {
     font-size: 13px;
     margin-top: 0;
 }

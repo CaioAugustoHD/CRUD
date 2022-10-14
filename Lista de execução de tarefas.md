@@ -42,7 +42,8 @@
     - [x] Estrutura lista
     - [x] Estrutura modais
 - [ ] Mensagem de erro estilizada
-- [ ] Animação nos inputs
+- [x] Animação nos inputs
+- [ ] Estilizar inputs
 - [ ] Definir cores
 - [x] Estilizar botões
     - [x] Botões da lista
