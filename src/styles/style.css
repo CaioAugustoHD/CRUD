@@ -284,14 +284,14 @@ button.modal-removerPessoa__btn-remover {
     }
 
 
-@media (max-width: 755px){
+@media (max-width: 850px){
 
     .contein__lista-pessoas {
-        width: 83%;
+        width: 86%;
     }
 }
 
-@media (max-width: 570px){
+@media (max-width: 670px){
 
     .contein__lista-pessoas {
         max-width: 400px;
