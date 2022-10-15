@@ -88,6 +88,7 @@ td.lista-pessoas__content-btn {
     padding: 2em;
     width: min(400px, 80%);
     min-width: 312px;
+    border-radius: 10px;
 }
 
 .modal__mensagem {
@@ -164,6 +165,8 @@ td.lista-pessoas__content-btn {
 
 .modal_content-btn {
     margin-top: 3em;
+    display: flex;
+    justify-content: center;
 }
 
 .form__msg-erro {
