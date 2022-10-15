@@ -2,6 +2,7 @@
 
 :root {
     --cor-vermelha: rgb(194, 37, 37);
+    --cor-azul: #4098f0;
 }
 
 * {
@@ -34,7 +35,7 @@ tr:nth-child(odd){
 }
 
 .lista-pessoas th {
-    background-color: #4098f0;
+    background-color: var(--cor-azul);
     color: #FAFAFA;
     text-shadow: 0px 0px 2px #000;
     letter-spacing: 1px;
@@ -158,7 +159,7 @@ div.modal-removerPessoa__content {
     border: 0;
     width: 115px;
     height: 44px;
-    background-color: #4098f0;
+    background-color: var(--cor-azul);
     color: #FAFAFA;
 }
 
@@ -174,7 +175,7 @@ button.modal-removerPessoa__btn-remover {
     font-size: 1em;
     border: 0;
     border-radius: 20px;
-    background-color: #4098f0;
+    background-color: var(--cor-azul);
     color: #FAFAFA;
 }
 
@@ -201,21 +202,25 @@ button.modal-removerPessoa__btn-remover {
     width: 26px;
     height: 26px;
     border-radius: 5px;
+    border: 0;
     background-image: url('../assets/iconedit.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 24px;
+    background-color: var(--cor-azul);
 }
 
 .lista-pessoas__btn-removerPessoa {
     width: 26px;
     height: 26px;
     border-radius: 5px;
+    border: 0;
     background-image: url('../assets/icondelete.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 24px;
     margin-left: 3px;
+    background-color: var(--cor-vermelha);
 }
 
 
