@@ -43,7 +43,7 @@ function fecharModais(){
     modalEditPessoa.style.display = 'none';
     modalRemoverPessoa.style.display = 'none';
 
-    let inputs = [inputAddNome, inputAddEmail, inputAddData];
+    let inputs = [inputAddNome, inputAddEmail, inputAddData, inputEditNome, inputEditData, inputEditEmail];
     inputs.forEach(input => {
         input.value = '';
         ocultarMsgErro(input);
@@ -156,6 +156,7 @@ function msgErro(input, msg){
     msgErro_span.innerHTML = msg;
     
     msgErro_span.style.visibility = 'visible';
+    msgErro_span.className = 'form__msg-erro shake-horizontal';
 }
 
 function ocultarMsgErro(input){
@@ -164,6 +165,7 @@ function ocultarMsgErro(input){
     const msgErro_span = content.querySelector('.form__msg-erro');
 
     msgErro_span.style.visibility = 'hidden';
+    msgErro_span.className = 'form__msg-erro';
 }
 
 function cadastrar(){
