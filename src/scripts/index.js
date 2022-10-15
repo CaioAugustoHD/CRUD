@@ -151,7 +151,7 @@ function validarData(input){
 function msgErro(input, msg){
 
     let content = input.parentElement;
-    const msgErro_span = content.querySelector('.form-addPessoa__msg-erro');
+    const msgErro_span = content.querySelector('.form__msg-erro');
 
     msgErro_span.innerHTML = msg;
     
@@ -161,7 +161,7 @@ function msgErro(input, msg){
 function ocultarMsgErro(input){
 
     let content = input.parentElement;
-    const msgErro_span = content.querySelector('.form-addPessoa__msg-erro');
+    const msgErro_span = content.querySelector('.form__msg-erro');
 
     msgErro_span.style.visibility = 'hidden';
 }
