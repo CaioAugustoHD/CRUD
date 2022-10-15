@@ -51,5 +51,5 @@
     - [x] Outros botões
 - [ ] Estilizar modais
 - [ ] Deixar modais responsivos
-- [ ] Estilizar lista
-- [ ] Deixar lista responsiva
+- [x] Estilizar lista
+- [x] Deixar lista responsiva

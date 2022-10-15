@@ -8,10 +8,17 @@
 }
 
 /* LISTA DE PESSOAS */
-.lista-pessoas {
-    width: 70%;
+.contein__lista-pessoas {
+    width: min(70%, 800px);
+    min-width: 300px;
     margin: 30px auto;
+}
+
+.lista-pessoas {
+    width: 100%;
     border-collapse: collapse;
+    margin-bottom: 40px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
 }
 
 tr:nth-child(even){
@@ -25,6 +32,7 @@ tr:nth-child(odd){
 .lista-pessoas td {
     padding: 1em 0.7em;
     text-align: center;
+    position: relative;
 }
 
 td.lista-pessoas__content-btn {
@@ -180,4 +188,62 @@ div.modal-removerPessoa__content {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 24px;
+    margin-left: 3px;
+}
+
+
+@media (max-width: 755px){
+
+    .contein__lista-pessoas {
+        width: 83%;
+    }
+}
+
+@media (max-width: 570px){
+
+    .contein__lista-pessoas {
+        max-width: 400px;
+    }
+
+    .lista-pessoas {
+        border: none;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+    }
+
+    .lista-pessoas  td {
+        display: block;
+        text-align: right;
+        padding: 1.5em 2%;
+    }
+
+    .lista-pessoas td.lista-pessoas__content-btn {
+        text-align: center;
+    }
+
+    .lista-pessoas  td:before {
+        content: attr(data-titulo);
+        position: absolute;
+        left: 2%;
+        display: block;
+        font-weight: bold;
+    }
+
+    .lista-pessoas thead {
+        display: none;
+    }
+
+    .lista-pessoas__body tr {
+        display: block;
+    }
+
+    .lista-pessoas__btn-removerPessoa {
+        margin-left: 50px;
+        width: 36px;
+        height: 36px;
+    }
+
+    .lista-pessoas__btn-editPessoa {
+        width: 36px;
+        height: 36px;
+    }
 }

@@ -187,6 +187,10 @@ function adicionar_Lista(nome, email, data){
     const lista__dataPessoa = document.createElement('td');
     const lista__acoes = document.createElement('td');
 
+    lista__nomePessoa.setAttribute('data-titulo', 'Nome:');
+    lista__emailPessoa.setAttribute('data-titulo', 'Email:');
+    lista__dataPessoa.setAttribute('data-titulo', 'Data de nascimento:');
+
     lista__linha.appendChild(lista__nomePessoa);
     lista__linha.appendChild(lista__emailPessoa);
     lista__linha.appendChild(lista__dataPessoa);
