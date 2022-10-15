@@ -45,7 +45,6 @@
     - [x] Mensagem de erro desaparecer após input voltar a receber o foco
 - [x] Animação nos inputs
 - [x] Estilizar inputs
-- [ ] Definir cores
 - [x] Estilizar botões
     - [x] Botões da lista
     - [x] Outros botões
@@ -53,3 +52,5 @@
 - [x] Deixar modais responsivos
 - [x] Estilizar lista
 - [x] Deixar lista responsiva
+- [x] Definir cores
+- [ ] Efeito hover nos botões
