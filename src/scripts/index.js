@@ -36,18 +36,29 @@ let dataValida;
 
 function abrirModal(modal){
     modal.style.display = 'block';
+    modal.classList.add('fade-in');
+    modal.classList.remove('fade-out');
 }
 
 function fecharModais(){
-    modalAddPessoa.style.display = 'none';
-    modalEditPessoa.style.display = 'none';
-    modalRemoverPessoa.style.display = 'none';
+    setTimeout(() => {
+        modalAddPessoa.style.display = 'none';
+        modalEditPessoa.style.display = 'none';
+        modalRemoverPessoa.style.display = 'none';
 
-    let inputs = [inputAddNome, inputAddEmail, inputAddData, inputEditNome, inputEditData, inputEditEmail];
-    inputs.forEach(input => {
+        let inputs = [inputAddNome, inputAddEmail, inputAddData, inputEditNome, inputEditData, inputEditEmail];
+        inputs.forEach(input => {
         input.value = '';
         ocultarMsgErro(input);
     })
+    }, 500);
+
+    modalAddPessoa.classList.remove('fade-in');
+    modalAddPessoa.classList.add('fade-out');
+    modalEditPessoa.classList.remove('fade-in');
+    modalEditPessoa.classList.add('fade-out');
+    modalRemoverPessoa.classList.remove('fade-in');
+    modalRemoverPessoa.classList.add('fade-out');
 }
 
 class Pessoa {

@@ -54,3 +54,5 @@
 - [x] Deixar lista responsiva
 - [x] Definir cores
 - [x] Efeito hover nos botões
+- [x] Animação nas mensagens de erro
+- [x] Animação nos modais
