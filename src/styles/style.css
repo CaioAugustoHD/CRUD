@@ -15,11 +15,22 @@
 }
 
 
+.lista-pessoas-vazia__msg {
+    text-align: center;
+    background-color: var(--cor-azul);
+    color: #FAFAFA;
+    letter-spacing: 1px;
+    margin: 120px auto;
+    padding: 1.2em;
+    width: 75%;
+    border-radius: 37px;
+}
+
 /* LISTA DE PESSOAS */
 .contein__lista-pessoas {
     width: min(70%, 800px);
     min-width: 300px;
-    margin: 30px auto;
+    margin: 50px auto;
 }
 
 .lista-pessoas {
@@ -326,5 +337,9 @@ button.modal-removerPessoa__btn-remover {
     .lista-pessoas__btn-editPessoa {
         width: 36px;
         height: 36px;
+    }
+
+    .lista-pessoas-vazia__msg {
+        margin: 50px auto;
     }
 }

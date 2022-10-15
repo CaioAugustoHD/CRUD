@@ -57,3 +57,8 @@
 - [x] Animação nas mensagens de erro
 - [x] Animação nos modais
 - [x] Transição nos botões
+
+## OUTRAS FUNCIONALIDADES
+
+- [x] Ocultar lista caso ela esteja vazia
+- [ ] Definir máximo de caracteres para input

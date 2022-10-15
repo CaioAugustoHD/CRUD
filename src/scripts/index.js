@@ -70,7 +70,18 @@ class Pessoa {
 }
 
 let listaPessoas;
-const lerListaPessoas = () => listaPessoas = JSON.parse(localStorage.getItem('listaPessoas') || '[]');
+function lerListaPessoas(){
+    listaPessoas = JSON.parse(localStorage.getItem('listaPessoas') || '[]');
+    
+    const listaVazia = document.querySelector('.lista-pessoas-vazia');
+    if(listaPessoas.length == 0){
+        lista.style.display = 'none';
+        listaVazia.style.display = 'block';
+    } else {
+        lista.style.display = 'table';
+        listaVazia.style.display = 'none';
+    }
+}
 
 function validarDados(acao, inputNome, inputEmail, inputData){
 
@@ -189,6 +200,8 @@ function cadastrar(){
 
     adicionar_Lista(inputAddNome.value, inputAddEmail.value, inputAddData.value);
 
+    lerListaPessoas();
+
     fecharModais();
 }
 
@@ -285,6 +298,7 @@ function removerPessoa(){
     localStorage.setItem('listaPessoas', JSON.stringify(listaPessoas));
 
     pessoaSelecionada.remove();
+    lerListaPessoas();
     fecharModais();
 
 }
