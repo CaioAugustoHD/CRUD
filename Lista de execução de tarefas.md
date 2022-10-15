@@ -61,4 +61,4 @@
 ## OUTRAS FUNCIONALIDADES
 
 - [x] Ocultar lista caso ela esteja vazia
-- [ ] Definir máximo de caracteres para input
+- [x] Definir máximo de caracteres para input
