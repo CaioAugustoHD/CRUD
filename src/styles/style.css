@@ -22,8 +22,8 @@
     letter-spacing: 1px;
     margin: 120px auto;
     padding: 1.2em;
-    width: 75%;
-    border-radius: 37px;
+    width: min(75%, 450px);
+    border-radius: 25px;
 }
 
 /* LISTA DE PESSOAS */
@@ -344,6 +344,6 @@ button.modal-removerPessoa__btn-remover {
     }
 
     .lista-pessoas-vazia__msg {
-        margin: 50px auto;
+        margin: 100px auto;
     }
 }
