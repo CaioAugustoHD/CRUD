@@ -95,6 +95,8 @@ td.lista-pessoas__content-btn {
     left: 0;
     margin-top: 13px;
     transition: all 200ms ease-out;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .input-modal{
@@ -110,8 +112,11 @@ td.lista-pessoas__content-btn {
 }
 
 .input-modal:focus {
+    border-color: var(--cor-azul);
+}
 
-    border-color: rgb(98, 79, 79)
+.input-modal:focus + label {
+    color: var(--cor-azul);
 }
 
 .input-modal:focus + label,
@@ -124,6 +129,8 @@ td.lista-pessoas__content-btn {
 .form-editPessoa__label-data {
     display: block;
     margin-bottom: 0.7em;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 #form-editPessoa__input-data,
@@ -136,13 +143,20 @@ td.lista-pessoas__content-btn {
     outline: 0;
 }
 
+#form-editPessoa__input-data:focus,
+#form-addPessoa__input-data:focus {
+    border-color: var(--cor-azul);
+}
+
 .modal_content-btn {
     margin-top: 3em;
 }
 
-.form-addPessoa__msg-erro {
+.form__msg-erro {
     display: block;
     visibility: hidden;
+    margin-top:5px;
+    color: var(--cor-vermelha);
 }
 
 div.modal-removerPessoa__content {
