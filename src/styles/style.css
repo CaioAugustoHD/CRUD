@@ -29,14 +29,15 @@
 /* LISTA DE PESSOAS */
 .contein__lista-pessoas {
     width: min(70%, 800px);
-    min-width: 300px;
-    margin: 50px auto;
+    min-width: 350px;
+    margin: 30px auto 20px;
+    max-height: 515px;
+    overflow-y: auto;
 }
 
 .lista-pessoas {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 40px;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
 }
 
@@ -211,7 +212,7 @@ button.modal-removerPessoa__btn-remover {
 
 .btn-addPessoa {
     display: block;
-    margin: auto;
+    margin:  0 auto 4px;
     width: 10em;
     padding: 0.5em 0.5em 0.7em;
     font-size: 1em;
@@ -295,6 +296,9 @@ button.modal-removerPessoa__btn-remover {
 
     .contein__lista-pessoas {
         max-width: 400px;
+        max-height: 571px;
+        overflow-y: auto;
+        margin: 10px auto 18px;
     }
 
     .lista-pessoas {

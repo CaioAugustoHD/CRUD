@@ -62,3 +62,4 @@
 
 - [x] Ocultar lista caso ela esteja vazia
 - [x] Definir máximo de caracteres para input
+- [x] Barra de scroll na lista quando estiver muito grande
