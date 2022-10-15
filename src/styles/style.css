@@ -59,7 +59,8 @@ td.lista-pessoas__content-btn {
     transform: translate(-50%, -50%);
     background-color: #FAFAFA;
     padding: 2em;
-    width: 400px;
+    width: min(400px, 80%);
+    min-width: 312px;
 }
 
 .modal__mensagem {
