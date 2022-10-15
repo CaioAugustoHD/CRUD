@@ -53,4 +53,4 @@
 - [x] Estilizar lista
 - [x] Deixar lista responsiva
 - [x] Definir cores
-- [ ] Efeito hover nos botões
+- [x] Efeito hover nos botões

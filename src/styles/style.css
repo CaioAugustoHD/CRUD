@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 :root {
-    --cor-vermelha: rgb(194, 37, 37);
+    --cor-vermelha: rgb(198, 51, 51);
     --cor-azul: #4098f0;
+    --cor-azul-escuro: #151555;
 }
 
 * {
@@ -164,6 +165,7 @@ div.modal-removerPessoa__content {
     justify-content: center;
 }
 
+
 /* BOTÕES */
 .modal-removerPessoa__btn-remover,
 .form-editPessoa__btn-edit,
@@ -175,11 +177,22 @@ div.modal-removerPessoa__content {
     height: 44px;
     background-color: var(--cor-azul);
     color: #FAFAFA;
+    cursor: pointer;
 }
+    .form-addPessoa__btn-add:hover,
+    .form-editPessoa__btn-edit:hover,
+    .btn-addPessoa:hover {
+        background-color: #FAFAFA;
+        color: var(--cor-azul);
+        border: 1px solid var(--cor-azul);
+    }
 
 button.modal-removerPessoa__btn-remover {
     background-color: var(--cor-vermelha);
 }
+    .modal-removerPessoa__btn-remover:hover {
+        background-color: rgb(42, 38, 38);
+    }
 
 .btn-addPessoa {
     display: block;
@@ -191,6 +204,7 @@ button.modal-removerPessoa__btn-remover {
     border-radius: 20px;
     background-color: var(--cor-azul);
     color: #FAFAFA;
+    cursor: pointer;
 }
 
 .btn-icone {
@@ -210,7 +224,12 @@ button.modal-removerPessoa__btn-remover {
     border-radius: 20px;
     border: 2px solid var(--cor-vermelha);
     color: var(--cor-vermelha);
+    cursor: pointer;
 }
+    .botoes-cancelar:hover {
+        background-color: var(--cor-vermelha);
+        color: #FAFAFA;
+    }
 
 .lista-pessoas__btn-editPessoa {
     width: 26px;
@@ -222,7 +241,11 @@ button.modal-removerPessoa__btn-remover {
     background-repeat: no-repeat;
     background-size: 24px;
     background-color: var(--cor-azul);
+    cursor: pointer;
 }
+    .lista-pessoas__btn-editPessoa:hover {
+        background-color: var(--cor-azul-escuro);
+    }
 
 .lista-pessoas__btn-removerPessoa {
     width: 26px;
@@ -235,7 +258,11 @@ button.modal-removerPessoa__btn-remover {
     background-size: 24px;
     margin-left: 3px;
     background-color: var(--cor-vermelha);
+    cursor: pointer;
 }
+    .lista-pessoas__btn-removerPessoa:hover {
+        background-color: rgb(42, 38, 38);
+    }
 
 
 @media (max-width: 755px){
