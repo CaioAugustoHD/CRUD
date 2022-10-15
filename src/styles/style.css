@@ -4,6 +4,7 @@
     --cor-vermelha: rgb(198, 51, 51);
     --cor-azul: #4098f0;
     --cor-azul-escuro: #151555;
+    --cor-escura: rgb(42, 38, 38);
 }
 
 * {
@@ -172,26 +173,29 @@ div.modal-removerPessoa__content {
 .form-addPessoa__btn-add {
     padding: 0.7em 1em 0.5em;
     border-radius: 20px;
-    border: 0;
+    border: 2px solid var(--cor-azul);
     width: 115px;
     height: 44px;
     background-color: var(--cor-azul);
     color: #FAFAFA;
     cursor: pointer;
+    transition: all 300ms ease;
 }
     .form-addPessoa__btn-add:hover,
     .form-editPessoa__btn-edit:hover,
     .btn-addPessoa:hover {
         background-color: #FAFAFA;
         color: var(--cor-azul);
-        border: 1px solid var(--cor-azul);
+        border: 2px solid var(--cor-azul);
     }
 
 button.modal-removerPessoa__btn-remover {
     background-color: var(--cor-vermelha);
+    border: 2px solid var(--cor-vermelha);
 }
     .modal-removerPessoa__btn-remover:hover {
-        background-color: rgb(42, 38, 38);
+        background-color: var(--cor-escura);
+        border: 2px solid var(--cor-escura);
     }
 
 .btn-addPessoa {
@@ -200,11 +204,12 @@ button.modal-removerPessoa__btn-remover {
     width: 10em;
     padding: 0.5em 0.5em 0.7em;
     font-size: 1em;
-    border: 0;
+    border: 2px solid var(--cor-azul);
     border-radius: 20px;
     background-color: var(--cor-azul);
     color: #FAFAFA;
     cursor: pointer;
+    transition: all 300ms ease;
 }
 
 .btn-icone {
@@ -225,6 +230,7 @@ button.modal-removerPessoa__btn-remover {
     border: 2px solid var(--cor-vermelha);
     color: var(--cor-vermelha);
     cursor: pointer;
+    transition: all 300ms ease;
 }
     .botoes-cancelar:hover {
         background-color: var(--cor-vermelha);
@@ -242,6 +248,7 @@ button.modal-removerPessoa__btn-remover {
     background-size: 24px;
     background-color: var(--cor-azul);
     cursor: pointer;
+    transition: all 300ms ease;
 }
     .lista-pessoas__btn-editPessoa:hover {
         background-color: var(--cor-azul-escuro);
@@ -259,9 +266,10 @@ button.modal-removerPessoa__btn-remover {
     margin-left: 3px;
     background-color: var(--cor-vermelha);
     cursor: pointer;
+    transition: all 300ms ease;
 }
     .lista-pessoas__btn-removerPessoa:hover {
-        background-color: rgb(42, 38, 38);
+        background-color: var(--cor-escura);
     }
 
 
