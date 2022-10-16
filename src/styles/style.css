@@ -287,6 +287,28 @@ button.modal-removerPessoa__btn-remover {
         background-color: var(--cor-escura);
     }
 
+/* BARRA SCROLL */
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--cor-azul) none;
+  }
+  
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: none;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--cor-azul);
+    border-radius: 20px;
+    border: none;
+  }
+
 
 @media (max-width: 850px){
 
