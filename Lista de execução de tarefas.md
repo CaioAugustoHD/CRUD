@@ -57,6 +57,8 @@
 - [x] Animação nas mensagens de erro
 - [x] Animação nos modais
 - [x] Transição nos botões
+- [x] Barra de scroll estilizada
+- [x] Adicionado favicon
 
 ## OUTRAS FUNCIONALIDADES
 
