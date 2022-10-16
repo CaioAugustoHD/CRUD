@@ -97,7 +97,7 @@ Para abrir o sistema, basta usar um navegador de sua preferência e conexão com
 
 
 ## Links
-* Repositório: 
+* Repositório: https://github.com/CaioAugustoHD/Lista-pessoas-cadastradas
 * Deploy: https://pessoas-cadastradas.netlify.app/
 
 ## Autor
